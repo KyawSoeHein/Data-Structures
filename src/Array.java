@@ -1,30 +1,34 @@
 import java.util.Arrays;
 
 public class Array {
-    int count = 5;
     int[] arr = {10, 20, 30, 40, 50};
 
     void add(int value){
-        count++;
-        int[] newArr = new int[count];
+        int count = arr.length;
+        int[] newArr = new int[count + 1];
 
-        for (int i = 0; i < count - 1; i++){
+        for (int i = 0; i < count; i++){
             newArr[i] = arr[i];
         }
-        newArr[count - 1] = value;
 
+        newArr[count] = value;
+        arr = newArr;
         System.out.println(Arrays.toString(newArr));
     }
 
     void remove(int index){
+        int count = arr.length;
         int[] newArr = new int[count - 1];
+        int counter = 0;
 
-        for (int i = 0; i < count - 1; i++){
-            if (i != index)
-                newArr[i] = arr[i];
+        for (int i = 0; i < count; i++){
+            if (i != index) {
+                newArr[counter] = arr[i];
+                counter++;
+            }
         }
-        count--;
 
+        arr = newArr;
         System.out.println(Arrays.toString(newArr));
     }
 }
