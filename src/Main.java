@@ -5,22 +5,29 @@ public class Main {
 //        arr.add(80);
 //        arr.remove(2);
 
-        SinglyLinkedList list = new SinglyLinkedList();
-        list.pushFront(20);
-        list.pushFront(40);
-        list.pushFront(60);
-        list.printList();
-        list.topFront();
-        list.pushBack(80);
-        list.pushBack(90);
-        list.topBack();
-        list.popFront();
-        list.findNode(100);
-        list.popBack();
-        list.pushFront(100);
-        list.pushFront(110);
-        list.pushFront(120);
-        list.printList();
-        list.reverse();
+//        SinglyLinkedList list = new SinglyLinkedList();
+//        list.pushFront(20);
+//        list.pushFront(40);
+//        list.pushFront(60);
+//        list.printList();
+//        list.topFront();
+//        list.pushBack(80);
+//        list.pushBack(90);
+//        list.topBack();
+//        list.popFront();
+//        list.findNode(100);
+//        list.popBack();
+//        list.pushFront(100);
+//        list.pushFront(110);
+//        list.pushFront(120);
+//        list.printList();
+//        list.reverse();
+
+        DoublyLinkedList list= new DoublyLinkedList();
+        list.pushBack(20);
+        list.pushBack(30);
+        list.pushBack(40);
+        list.pushBack(50);
+        list.pushBack(60);
     }
 }
