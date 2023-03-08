@@ -100,6 +100,23 @@ public class SinglyLinkedList {
         System.out.println("Top Back is " + getTheLastNode().value);
     }
 
+    public void reverse(){
+        System.out.println("Reversing");
+        Node prev = null;
+        Node current = head;
+        Node next = null;
+
+        while (current.next != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        current.next = prev;
+        head = current;
+        printList();
+    }
+
     public void printList(){
         Node node = head;
 

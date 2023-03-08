@@ -17,5 +17,10 @@ public class Main {
         list.popFront();
         list.findNode(100);
         list.popBack();
+        list.pushFront(100);
+        list.pushFront(110);
+        list.pushFront(120);
+        list.printList();
+        list.reverse();
     }
 }
