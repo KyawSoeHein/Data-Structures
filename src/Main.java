@@ -23,21 +23,30 @@ public class Main {
 //        list.printList();
 //        list.reverse();
 
-        DoublyLinkedList list= new DoublyLinkedList();
-        list.pushBack(20);
-        list.pushBack(30);
-        list.pushBack(40);
-        list.pushBack(50);
-        list.pushFront(60);
-        list.pushFront(70);
-        list.pushFront(80);
-        list.pushFront(90);
-        list.getTheLastNode();
-        list.topFront();
-        list.popFront();
-        list.popBack();
-        list.findNode(30);
-        list.reverse();
-        list.printReverseList();
+//        DoublyLinkedList list= new DoublyLinkedList();
+//        list.pushBack(20);
+//        list.pushBack(30);
+//        list.pushBack(40);
+//        list.pushBack(50);
+//        list.pushFront(60);
+//        list.pushFront(70);
+//        list.pushFront(80);
+//        list.pushFront(90);
+//        list.getTheLastNode();
+//        list.topFront();
+//        list.popFront();
+//        list.popBack();
+//        list.findNode(30);
+//        list.reverse();
+//        list.printReverseList();
+
+        Stack stack = new Stack();
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+        stack.top();
+        stack.pop();
+        stack.empty();
     }
 }
