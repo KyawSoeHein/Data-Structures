@@ -28,6 +28,16 @@ public class Main {
         list.pushBack(30);
         list.pushBack(40);
         list.pushBack(50);
-        list.pushBack(60);
+        list.pushFront(60);
+        list.pushFront(70);
+        list.pushFront(80);
+        list.pushFront(90);
+        list.getTheLastNode();
+        list.topFront();
+        list.popFront();
+        list.popBack();
+        list.findNode(30);
+        list.reverse();
+        list.printReverseList();
     }
 }
