@@ -40,13 +40,24 @@ public class Main {
 //        list.reverse();
 //        list.printReverseList();
 
-        Stack stack = new Stack();
-        stack.push(20);
-        stack.push(30);
-        stack.push(40);
-        stack.push(50);
-        stack.top();
-        stack.pop();
-        stack.empty();
+//        Stack stack = new Stack();
+//        stack.push(20);
+//        stack.push(30);
+//        stack.push(40);
+//        stack.push(50);
+//        stack.top();
+//        stack.pop();
+//        stack.empty();
+
+        Queue queue = new Queue();
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(60);
+        queue.enqueue(80);
+        queue.enqueue(100);
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
     }
 }
